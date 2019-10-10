@@ -39,12 +39,17 @@ int main(int argc, const char * argv[]) {
     for (int i = 0; i < argc; i++){
         printf("argv[%d] = %s\n", i, argv[i]);
     }
+    cout<<"argc = "<<argc<<endl;
     string inpath = "input.mp4";
     string outpath = "output.mp4";
-    if(argc >= 1){
+    if(argc <= 1 || strncmp(argv[1], "help", 5)==0){
+        cout<<"Example usage:\n  ./vidsum INPUTVIDEO\n  ./vidsum INPUTVIDEO OUTPUTVIDEO\n  ./vidsum INPUTVIDEO OUTPUTVIDEO SPEED1 SPEED2\n\nDefault values:\n  OUTPUTVIDEO = out.mp4\n  SPEED1 = 1.0\n  SPEED2 = 2.0\n\nMore info available at github.com/evnb/vwrt\n"<<endl;
+        return 0;
+    }
+    if(argc > 1){
         inpath = argv[1];
     }
-    if(argc >= 2){
+    if(argc > 2){
         outpath = argv[2];
     }
     cout<<"Detecting Silence"<<endl;
@@ -195,7 +200,12 @@ int main(int argc, const char * argv[]) {
     
     //vector<double> times{2,17}; //starts with next timecode after 0, ends with last timecode before the end of the video
     double first_speed = 1.0;
-    double second_speed = 4.0;
+    double second_speed = 2.0;
+    
+    if(argc > 4){
+        first_speed = stod(argv[3]);
+        second_speed = stod(argv[4]);
+    }
     
     vector<double> times(totalArr);
     

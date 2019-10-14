@@ -6,4 +6,4 @@ The objective of the Video Waste Reduction Tool (VWRT) is to optimize long infor
 
 The achieved results of the program are promising. In conducting tests with shorter videos, VWRT was able to identify parts of a video with low audio and fast-forward through them. In comparing the original video and processed video, it was found that the processed video was considerably shorter depending on the amount of non-audible sections. The processed video, however, seems to have slightly diminished image quality. In sum, the program accomplishes the set task by decreasing the overall viewing time of extraneous footage.
 
-When tested on two lecture review videos, VWRT successfully reduced watchtime by about 31%.
+**When tested on two lecture review videos, VWRT successfully reduced watchtime by about 31%.**

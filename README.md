@@ -5,7 +5,11 @@ By: Evan Binder, Nicholas Dodd
 ## Usage
 ### ./vidsum input.mp4 output.mp4 talking_speed quiet_speed
   It is optional to omit both `talking_speed` and `quiet_speed`, but not just one. (default values are 1.0 and 2.0 respectively)
-  _Note: vwrt does not accept flags at this time._
+  
+  _Note:_
+  - _vwrt does not accept flags at this time_
+  - _vwrt should work with any video file type_
+  - _vwrt was only tested on MacOS, but we imagine it would work on other OS's_
 
 ## Troubleshooting
 - VWRT seems to run aggressively slower on longer input videos. To speed this up for long videos, try [splitting them](https://unix.stackexchange.com/questions/1670/how-can-i-use-ffmpeg-to-split-mpeg-video-into-10-minute-chunks) into shorter segments, running VWRT on each segment, and then [stitching the segments](https://stackoverflow.com/questions/7333232/how-to-concatenate-two-mp4-files-using-ffmpeg) back together. This will eventually be implemented into VWRT untill we have a better fix. 

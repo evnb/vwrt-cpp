@@ -8,7 +8,7 @@ By: Evan Binder, Nicholas Dodd
   _Note: vwrt does not accept flags at this time._
 
 ## Troubleshooting
-- VWRT seems to run aggressively slower on longer input videos. To speed this up for long videos, try [splitting them](https://unix.stackexchange.com/questions/1670/how-can-i-use-ffmpeg-to-split-mpeg-video-into-10-minute-chunks) into showrter segments, running VWRT on each segment, and then [stitching the segments](https://stackoverflow.com/questions/7333232/how-to-concatenate-two-mp4-files-using-ffmpeg) back together. This will eventually be implemented into VWRT untill we have a better fix. 
+- VWRT seems to run aggressively slower on longer input videos. To speed this up for long videos, try [splitting them](https://unix.stackexchange.com/questions/1670/how-can-i-use-ffmpeg-to-split-mpeg-video-into-10-minute-chunks) into shorter segments, running VWRT on each segment, and then [stitching the segments](https://stackoverflow.com/questions/7333232/how-to-concatenate-two-mp4-files-using-ffmpeg) back together. This will eventually be implemented into VWRT untill we have a better fix. 
 - Make sure you have ffmpeg [installed](https://superuser.com/questions/624561/install-ffmpeg-on-os-x), upgraded, and [in PATH](https://superuser.com/questions/324616/how-should-i-set-the-path-variable-on-my-mac-so-the-hombrew-installed-tools-are)
 - Avoid spaces in names and directories
 - If you get a complicated error message, it is likely a problem with ffmpeg and not vwrt. Make sure ffmpeg is up to date and google the error if it persists.
@@ -21,4 +21,4 @@ The objective of the Video Waste Reduction Tool (VWRT) is to optimize long infor
 The achieved results of the program are promising. In conducting tests with shorter videos, VWRT was able to identify parts of a video with low audio and fast-forward through them. In comparing the original video and processed video, it was found that the processed video was considerably shorter depending on the amount of non-audible sections. The processed video, however, seems to have slightly diminished image quality. In sum, the program accomplishes the set task by decreasing the overall viewing time of extraneous footage.
 
 ## Related Resources
-- [Jumpcutter](https://github.com/carykh/jumpcutter) `Jumpcutter` is a watch-time reduction tool also built around `ffmpeg`, but in order to achieve theoretically smoother edits it saves each frame as a png, taking up a lot of storage space. _(Cary was also a big inspiration for me to get back to coding when I was in a rut, and I promise we didn't copy your idea. -Evan, a big fan)_
+- [Jumpcutter]:(https://github.com/carykh/jumpcutter) `Jumpcutter` is a watch-time reduction tool also built around `ffmpeg`, but in order to achieve theoretically smoother edits it saves each frame as a png, taking up a lot of storage space. _(Cary was also a big inspiration for me to get back to coding when I was in a rut, and I promise we didn't copy your idea. -Evan, a big fan)_

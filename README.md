@@ -17,8 +17,9 @@ By: Evan Binder, Nicholas Dodd
 - Avoid spaces in names and directories
 - If you get a complicated error message, it is likely a problem with ffmpeg and not vwrt. Make sure ffmpeg is up to date and google the error if it persists.
 
+## Examples
 **When tested on two lecture review videos, VWRT successfully reduced watchtime by about 31%.**
-
+- [Short video comparison](https://vimeo.com/user104259433/review/368077476/b7b2c314aa)
 ## Explanation
 The objective of the Video Waste Reduction Tool (VWRT) is to optimize long informational videos to waste as little of the viewer’s time as possible. Specifically, VWRT is aimed towards academic review videos. Review videos have become commonplace in the recent years, as more academic institutions follow the likes of MIT’s OpenCourseWare (OCW), in recording lecture videos to be posted online for public consumption. The movement of OCW has made educational resources more abundant and accessible than ever before, but these videos are far from perfect. Quality of academic videos is too often an afterthought, and a number of technological and content-related factors can obstruct the learning experience for viewers. Technological problems, such as too-low image resolution, or unintelligible audio, are experienced across many types of video and thus can be remedied with various existing software packages. However, problems relating to content of lecture videos are more niche and cannot be remedied by current commonplace software. These videos are often not rehearsed and as a result, there may be long sections of pauses or writing on the board. The way VWRT seeks to solve this problem is to find sections of a video where audio is below a certain threshold, and then fast-forward these sections to optimize the flow of information from the video to the viewer. 
 

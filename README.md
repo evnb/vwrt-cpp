@@ -1,5 +1,5 @@
 # Video Waste Reduction Tool
-
+vwrt is a command-line tool for piecewise video editing.
 By: Evan Binder, Nicholas Dodd
 
 ## Usage

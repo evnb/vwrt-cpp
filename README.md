@@ -14,7 +14,7 @@ _Note: This code is somewhat outdated as I am rewriting it in python with more f
   - _vwrt was only tested on MacOS, but we imagine it would work on other OS's_
 
 ## Troubleshooting
-- VWRT seems to run aggressively slower on longer input videos. To speed this up for long videos, try [splitting them](https://unix.stackexchange.com/questions/1670/how-can-i-use-ffmpeg-to-split-mpeg-video-into-10-minute-chunks) into shorter segments, running VWRT on each segment, and then [stitching the segments](https://stackoverflow.com/questions/7333232/how-to-concatenate-two-mp4-files-using-ffmpeg) back together. This will eventually be implemented into VWRT untill we have a better fix. 
+- VWRT seems to run aggressively slower on longer input videos. To speed this up for long videos, try [splitting them](https://unix.stackexchange.com/questions/1670/how-can-i-use-ffmpeg-to-split-mpeg-video-into-10-minute-chunks) into shorter segments, running VWRT on each segment, and then [stitching the segments](https://stackoverflow.com/questions/7333232/how-to-concatenate-two-mp4-files-using-ffmpeg) back together. ~~This will eventually be implemented into VWRT untill we have a better fix.~~ _Working on a fix for this in python. See top note._
 - Make sure you have ffmpeg [installed](https://superuser.com/questions/624561/install-ffmpeg-on-os-x), upgraded, and [in PATH](https://superuser.com/questions/324616/how-should-i-set-the-path-variable-on-my-mac-so-the-hombrew-installed-tools-are)
 - Avoid spaces in names and directories
 - If you get a complicated error message, it is likely a problem with ffmpeg and not vwrt. Make sure ffmpeg is up to date and google the error if it persists.

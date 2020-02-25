@@ -2,6 +2,8 @@
 vwrt is a command-line tool for piecewise video editing.
 By: Evan Binder, Nicholas Dodd
 
+_Note: This code is somewhat outdated as I am rewriting it in python with more features and better optimization._
+
 ## Usage
 ### ./vidsum input.mp4 output.mp4 talking_speed quiet_speed
   It is optional to omit both `talking_speed` and `quiet_speed`, but not just one. (default values are 1.0 and 2.0 respectively)
